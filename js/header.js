@@ -1,0 +1,14 @@
+document.writeln("<DIV class=\'mid\'>");
+document.writeln("            <DIV class=\'logo logo1\'\'>");
+document.writeln("                <a href=\'./index.html\' style=\'display: block;width: 80px;height: 80px;margin-top:50px;\'></a>");
+document.writeln("            </DIV>");
+document.writeln("");
+document.writeln("            <DIV class=\'logo logo2\' \'></DIV>");
+document.writeln("            <div class=\'login\'><a rel=\'nofollow\' href=\'login.html\'></a></div>");
+document.writeln("            <div class=\'searchTop d3\'>");
+document.writeln("                <form>");
+document.writeln("                    <input type=\'text\' placeholder=\'搜 索\' id=\'d3Input\' method=\'GET\' name=\'search\'>");
+document.writeln("                    <button type=\'submit\' id=\'d3Btn\'></button>");
+document.writeln("                </form>");
+document.writeln("            </div>");
+document.writeln("        </DIV>");

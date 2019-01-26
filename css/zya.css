@@ -1,0 +1,288 @@
+/*
+版本 1.0
+作者 skyhot
+时间 2012.9.6
+*/
+
+/*初始化*/
+.searchTop input::-webkit-input-placeholder {
+    color: #ffffff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#ffffff;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#ffffff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#ffffff;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption,  tbody, tfoot, thead, article{
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+body {
+	 font-size:12px;
+	
+	 -webkit-text-size-adjust:none;
+	
+	 background:#f4f4f4;
+	 /*height:100%;*/
+	 width:100%;
+	 font-family:"微软雅黑",Verdana, Arial, Helvetica, sans-serif;
+	 color:#5C6166;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal
+}
+ol, ul {
+	list-style: none
+}
+ol, ul, li, p, h2, h3, h4, h5, h6, dl, dt, dd, form, input, fieldset, select, textarea, object, embed {
+	margin: 0;
+	padding: 0;
+}
+input, img {
+	vertical-align: middle;
+}
+div
+{
+	display:block
+}
+
+img{
+	border: none;
+}
+a{
+	text-decoration:none;
+}
+
+a:link,a:visited{color:#5C6166;}
+a:hover,a:active {color:#5C6166;}
+
+.clear{
+	clear:both
+}
+.mid
+{
+	width:1200px;
+	margin:0 auto;
+	clear:both;
+}
+.midbanner
+{
+	width:1900px;
+	margin:0 auto;
+	clear:both;
+}
+
+
+
+#mian{ width:100%;  top:0px;margin:0px auto;padding:0px;min-width:1200px}
+.navbar { background-image:url(menu_bg2.png);background-repeat: repeat-x;width: 100%; height: 160px; position: fixed; z-index: 10; }
+.navbartop {width: 100%; height: 160px; }
+.navbar.navbar-fixed-top{position:fixed;left:0;top:0;width:100%;height:140px;padding:0;z-index:1;}
+.navbar.navbar-fixed-top#simple-nav{height:60px}
+.navbar.navbar-fixed-top#simple-nav #zenpayroll-logo{height:60px;width:150px}
+.navbar {background-color:#222222;background-repeat: repeat-x;width: 100%; height: 160px; position: fixed; z-index: 10; }
+.navbar2 {background-image:url(menu_bg.png);background-repeat: repeat-x;width: 100%; height: 160px; position: fixed; z-index: 10; }
+.navbartop {width: 100%; height: 160px; }
+.navbar2.navbar-fixed-top{position:fixed;left:0;top:0;width:100%;height:160px;padding:0;z-index:1;}
+.navbar2.navbar-fixed-top#simple-nav{height:60px}
+.navbar2.navbar-fixed-top#simple-nav #zenpayroll-logo{height:60px;width:150px}
+
+.navbar-fixed-top .navbar-collapse,.navbar-static-top .navbar-collapse,.navbar-fixed-bottom .navbar-collapse{padding-left:0; padding-right:0}}.container>.navbar-header,.container-fluid>.navbar-header,.container>.navbar-collapse,.container-fluid>.navbar-collapse{margin-right:-15px;margin-left:-15px}@media (min-width:768px){.container>.navbar-header,.container-fluid>.navbar-header,.container>.navbar-collapse,.container-fluid>.navbar-collapse{margin-right:0;margin-left:0}}.navbar-static-top{z-index:1000;border-width:0 0 1px}@media (min-width:768px){.navbar-static-top{border-radius:0}}.navbar-fixed-top,.navbar-fixed-bottom{position:fixed;right:0;left:0;z-index:1030}@media (min-width:768px){.navbar-fixed-top,.navbar-fixed-bottom{border-radius:0}}.navbar-fixed-top{top:0;border-width:0px}
+.bannermargin {margin-top:202px;}
+.login {position:absolute; top:75px; left:55%; margin-left:140px; }
+.logo {
+	width: 113px;
+	height: 140px;
+	overflow: hidden;
+	float: left;
+	display: inline-block;
+}
+.logo a {	width: 113px; height: 160px; overflow: hidden; display: block;padding-top:15px;}
+
+ 
+.navbar .mid{ position:relative;}
+
+.subnav {width:100%; height: 80px; float: left; position: relative;z-index: 20;background:#252525;padding-top:120px;opacity:0.8; filter:alpha(opacity=85);  }
+
+.subnav li {	width: 100%; overflow: hidden; font-size: 14px; margin-left: 10px;float: left;}
+.subnav li a {	text-align: center; color: #1A1A1A; line-height: 18px; display: block;font-family:Microsoft YaHei, Arial, Helvetica, sans-serif;}
+.subnav li.login a {	color: rgb(88, 88, 88); line-height: 40px; font-size: 14px;}
+.subnav li a:hover {
+	width: 100%;
+	text-align: center;
+	color: #858585;
+	display: block;
+}
+
+
+.searchTop{
+	position:absolute;
+	top:70px;
+	left:700px;
+	margin-left:240px;
+	background:#DBDBDB;
+	z-index:10;
+	width: 207px;
+}
+.searchTop2{
+	position:absolute;
+	top:76px;
+	left:931px;
+	margin-left:240px;
+	background:#DBDBDB;
+	z-index:10;
+	width: 207px;
+}
+.d3 {background: #4b4b4b;    border-radius: 13px}
+.d3 form {
+  background: #4b4b4b;
+  border-radius:5px;
+}
+.d3 input, .d3 button {
+  border: none;
+  outline: none;
+  font-family:Microsoft YaHei, Arial, Helvetica, sans-serif;
+  color:#FFF;
+  font-size: 16px;
+  background: transparent;
+}
+.d3 input {
+	padding-left:12px;
+	padding-right:10px;
+  width: 90%;
+  font-family:Microsoft YaHei, Arial, Helvetica, sans-serif;
+  color:#FFF;
+  font-size: 16px;
+  font-style:italic;
+  height: 30px;
+
+}
+.d3 button {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+   background: url(../img/icon15.png) no-repeat center #DBDBDB; height:28px; line-height:24px; width:38px;
+   background-color:#4b4b4b;
+    border-radius: 5px;
+}
+.d3 button:before {
+  background: url(../img/icon15.png) no-repeat center #DBDBDB; height:28px; line-height:24px; width:38px;
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+
+/*=========我的=========================*/
+.logo1{margin-left:80px;background-image:url(../img/logo2.png)}
+.logo2{
+	margin-left:340px;
+}
+.china{
+	 width: 1200px;
+	 margin:0 auto;
+	 text-align: center;
+	 padding-top:24px;
+ }
+
+.Z-top{
+	width: 100%;
+	margin:0 auto;
+	text-align: center;
+}
+.Z_top1{height: 226px;margin-top:140px;}
+.Z_top2{height: 770px;margin: 0 auto;margin-bottom: 40px;}
+/*.Z_top3{height:564px;margin: 0 auto;}*/
+.Z_top2a {
+	height: 770px;
+	width:100%;
+	background: url("../img/Zban.png") center no-repeat;
+	margin: 0 auto;
+}
+.Z_top3a {
+	height: 564px;
+	width:100%;
+	background: url("../img/Zban21.png") center no-repeat;
+	margin: 0 auto;
+	margin-bottom:50px;
+}
+.Z_top3a ul{
+	width: 1120px;
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 80px;
+}
+.Z_top3a li{
+	float: left;
+	margin:0 24px 0;
+	margin-top: 140px;
+	width: 317px;
+	height: 288px;
+	overflow: visible;
+	text-align: center;
+}
+.Z_top3a li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.Z_tul li.Z10_bam1{background: url("../img/Zbam1.png") center no-repeat}
+.Z_tul li.Z10_bam2{background: url("../img/Zbam2.png") center no-repeat}
+.Z_tul li.Z10_bam3{background: url("../img/Zbam3.png") center no-repeat}
+.Z_tul li.T7_bam1{background: url("../img/T7_bam1.png") center no-repeat}
+.Z_tul li.T7_bam2{background: url("../img/T7_bam2.png") center no-repeat}
+.Z_tul li.T7_bam3{background: url("../img/T7_bam3.png") center no-repeat}
+.Z_tul li.T8_bam1{background: url("../img/T8_bam1.png") center no-repeat}
+.Z_tul li.T8_bam2{background: url("../img/T8_bam2.png") center no-repeat}
+.Z_tul li.T8_bam3{background: url("../img/T8_bam3.png") center no-repeat}
+.Z_tul li.T10_bam1{background: url("../img/T10_bam1.png") center no-repeat}
+.Z_tul li.T10_bam2{background: url("../img/T10_bam2.png") center no-repeat}
+.Z_tul li.T10_bam3{background: url("../img/T10_bam3.png") center no-repeat}
+.Z_tul li.Z8_bam1{background: url("../img/Z8_bam1.png") center no-repeat}
+.Z_tul li.Z8_bam2{background: url("../img/Z8_bam2.png") center no-repeat}
+.Z_tul li.Z8_bam3{background: url("../img/Z8_bam3.png") center no-repeat}
+
+
+
+
+.Z_tul li.Z_tul08_c{background-image: url("../img/sda.png");height: 420px;	margin-top: 80px;cursor: pointer}
+.Z_tul img{margin-top:90px;display: none}
+.Z_tul span{display: block; font-family: "微软雅黑";font-weight: 500;}
+.Z_tul span{display: none;}
+.Z_tul .span1{
+	font-size: 22px;
+	color:#C58E27 ;
+}
+.Z_tul .span2{
+	font-size: 16px;
+	color:#ffffff;
+	line-height:26px;
+}
+.Z_tul li img{margin-bottom:73px;}
+.Z_tul .span12{color:#ffffff}
+
+
+
+
+
+
+
+
